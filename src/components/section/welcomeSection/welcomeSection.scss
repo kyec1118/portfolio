@@ -1,0 +1,109 @@
+@import "../../../styles/base";
+@import "../../../styles/animation.scss";
+.blueblob {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 20em;
+	z-index: -1;
+}
+
+.pinkblob {
+	position: absolute;
+	right: 0;
+	top: 40vh;
+	height: 30em;
+	z-index: -1;
+}
+.welcome {
+	padding-top: 5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	&_text_section {
+		display: flex;
+		flex-direction: column;
+		padding: 3rem;
+		margin-top: 2rem;
+		width: 35%;
+		height: 50%;
+	}
+
+	&_text_hello {
+		padding-bottom: 2rem;
+		font-family: "caveat";
+		font-size: 55px;
+		color: $font-gray;
+		font-weight: 500;
+		animation: moveInTop 1s;
+	}
+
+	&_text_intro {
+		font-family: "dm-serif-display";
+		font-size: 1rem;
+		color: $font-gray;
+		font-weight: 500;
+		animation: moveInTop 1s;
+	}
+
+	&_image {
+		position: relative;
+		height: 350px;
+		width: 350px;
+		background-color: rgb(254, 238, 145);
+		border-radius: 100%;
+		animation: moveInRight 2s;
+	}
+
+	img {
+		height: 100%;
+		bottom: -10px;
+		left: 40px;
+		position: absolute;
+		animation: moveInRight 2s;
+	}
+}
+
+@include sm {
+	.welcome {
+		padding-top: 4rem;
+		flex-direction: column;
+		flex-flow: column-reverse;
+
+		&_text_section {
+			display: flex;
+			flex-direction: column;
+			padding: 3rem;
+			width: 70%;
+			height: auto;
+		}
+
+		&_text_hello {
+			padding-bottom: 1rem;
+			font-family: "caveat";
+			font-size: 45px;
+			color: $font-gray;
+			font-weight: 500;
+			animation: moveInTop 1s;
+		}
+
+		&_image {
+			position: relative;
+			height: 200px;
+			width: 200px;
+			background-color: rgb(254, 238, 145);
+			border-radius: 100%;
+			animation: moveInTop 1s;
+		}
+
+		img {
+			height: 100%;
+			bottom: -5px;
+			left: 20px;
+			position: absolute;
+			animation: moveInTop 1s;
+		}
+	}
+}
