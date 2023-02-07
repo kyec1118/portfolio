@@ -1,0 +1,25 @@
+@import "../../../styles/base";
+.nav_btn {
+	padding: 1em;
+	font-family: "DM Serif Display";
+	font-size: 0.9rem;
+	font-weight: 400;
+	color: $font-gray;
+
+	&:hover {
+		color: $font-hover;
+	}
+	&::after {
+		content: "";
+		display: block;
+		margin-top: 3px;
+		width: 0;
+		height: 1px;
+		background: #ffdaca;
+		transition: width 0.3s;
+	}
+	&:hover::after {
+		border-bottom: 1px;
+		width: 100%;
+	}
+}
