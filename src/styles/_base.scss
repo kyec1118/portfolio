@@ -1,0 +1,17 @@
+// color variables
+$page-background: #fffefc;
+$basic-blue: #ecf9ff;
+$font-gray: #6c6c6c;
+$font-hover: #929292;
+
+// RWD breakpoint setting
+@mixin md {
+	@media (max-width: 900px) {
+		@content;
+	}
+}
+@mixin sm {
+	@media (max-width: 600px) {
+		@content;
+	}
+}
