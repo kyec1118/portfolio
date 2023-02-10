@@ -23,3 +23,9 @@
 		width: 100%;
 	}
 }
+
+@include sm {
+	.nav_btn {
+		padding: 8px;
+	}
+}
