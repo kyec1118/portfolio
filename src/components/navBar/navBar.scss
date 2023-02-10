@@ -4,19 +4,24 @@
 	right: 5%;
 	bottom: 5px;
 }
+.nav_btns {
+	display: flex;
+	flex-direction: row;
+}
 .menu_icon {
 	display: none;
 }
 
 @include sm {
 	.nav_btns {
+		display: flex;
+		flex-direction: column;
 		padding: 10px 0px 10px 15px;
 		position: absolute;
 		right: -115px;
 		top: 60px;
-		background-color: #fff6e3;
-		// background-color: rgba(255, 255, 255, 0.28);
-		// backdrop-filter: blur(6px);
+		background-color: rgba(255, 255, 255, 0.28);
+		backdrop-filter: blur(6px);
 		border-radius: 10% 0 0 10%;
 		width: 100px;
 		height: auto;
