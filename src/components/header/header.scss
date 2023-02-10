@@ -1,4 +1,4 @@
-@use "../../styles/base";
+@import "../../styles/base";
 
 .header {
 	width: 100vw;
@@ -14,11 +14,10 @@
 
 	&_name {
 		font-family: "DM Serif Display";
-		color: base.$font-gray;
+		color: $font-gray;
 		font-weight: 600;
 		font-size: 1.5em;
 		letter-spacing: 1px;
-		// letter-spacing: 1px;
 		// backdrop-filter: blur(20px);
 		// background: rgba(255, 255, 255, 0.584);
 	}
@@ -43,97 +42,16 @@
 				padding-bottom: 6px;
 			}
 		}
-
-		.right-section {
-			text-align: right;
-			.ant-btn,
-			.ant-btn:focus {
-				padding: 0 16px;
-				border-radius: 20px;
-				border-color: #ecf9ff;
-				background-color: #ecf9ff;
-				color: white;
-				font-weight: 600;
-
-				&:hover {
-					background-color: white;
-					border-color: #ecf9ff;
-					color: black;
-				}
-			}
-
-			.welcome {
-				padding-right: 10px;
-			}
-
-			.language {
-				padding-right: 5px;
-				padding-bottom: 5px;
-			}
-
-			.language-label {
-				background-color: base.$page-background;
-				font-size: 13px;
-				&:hover {
-					color: #ecf9ff;
-					cursor: pointer;
-				}
-			}
-		}
 	}
 
-	.ant-menu-horizontal {
-		display: flex;
-		justify-content: space-between;
-		// border-bottom: 1.5px solid $light-gray;
-		background-color: base.$page-background;
-
-		&:not(.ant-menu-dark) {
-			> .ant-menu-item {
-				width: calc(20% - 50px);
-				text-align: center;
-
-				.link {
-					// color: $background-gray;
-					font-weight: bold;
-				}
-
-				&-selected,
-				&:hover {
-					border-bottom: 2px solid #ecf9ff;
-				}
-			}
-		}
-	}
-
-	@include base.sm {
+	@include sm {
 		padding: 12px 0;
-
+		&_name {
+			font-size: 1.3em;
+			letter-spacing: 1px;
+		}
 		&-top {
 			padding: 0 26px;
-		}
-
-		.ant-menu-horizontal {
-			padding: 6px 2px 0;
-			line-height: 36px;
-
-			&:not(.ant-menu-dark) {
-				> .ant-menu-item {
-					width: 19%;
-					text-align: center;
-					margin: 0;
-
-					.link {
-						font-weight: normal;
-						font-size: 12px;
-					}
-
-					&-selected,
-					&:hover {
-						border-bottom: 2px solid #ecf9ff;
-					}
-				}
-			}
 		}
 	}
 }
