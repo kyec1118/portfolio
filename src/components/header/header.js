@@ -5,9 +5,9 @@ import NavBar from "../navBar/navBar";
 const Header = () => {
 	return (
 		<div className="header">
-			<div className="header_logo">
+			<a className="header_logo" href="/">
 				<text className="header_name">Dale.Chang</text>
-			</div>
+			</a>
 			<NavBar />
 		</div>
 	);

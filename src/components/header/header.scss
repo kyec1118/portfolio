@@ -12,14 +12,16 @@
 	justify-content: center;
 	align-items: center;
 
+	&_logo {
+		cursor: pointer;
+	}
+
 	&_name {
 		font-family: "DM Serif Display";
 		color: $font-gray;
 		font-weight: 600;
 		font-size: 1.5em;
 		letter-spacing: 1px;
-		// backdrop-filter: blur(20px);
-		// background: rgba(255, 255, 255, 0.584);
 	}
 
 	&-top {
