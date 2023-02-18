@@ -20,11 +20,12 @@
 		position: absolute;
 		right: -115px;
 		top: 60px;
-		background-color: rgba(255, 255, 255, 0.28);
-		backdrop-filter: blur(6px);
+		// background-color: white;
+		background-color: rgba(255, 255, 255, 0.162);
+		backdrop-filter: blur(5px);
 		border-radius: 10% 0 0 10%;
 		width: 100px;
-		height: auto;
+		height: 100vh;
 		transition: all 1s ease;
 		overflow: hidden;
 	}
@@ -34,7 +35,7 @@
 	.menu_icon {
 		display: inline-block;
 		position: absolute;
-		right: 10%;
+		right: 5%;
 		top: 38%;
 
 		&.close .btn-line:nth-child(1) {
