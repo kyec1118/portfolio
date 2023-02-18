@@ -1,0 +1,17 @@
+.cursor {
+	display: none;
+	z-index: 9999;
+	// border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	// background-color: rgb(142, 122, 95);
+	// background-image: url(../../assets/Pencil.png);
+	// border: 1px solid black;
+	pointer-events: none;
+	overflow: hidden;
+	transform: translate();
+	position: fixed;
+	img {
+		height: 100%;
+	}
+}
