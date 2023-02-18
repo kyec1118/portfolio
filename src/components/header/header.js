@@ -5,7 +5,7 @@ import NavBar from "../navBar/navBar";
 const Header = () => {
 	return (
 		<div className="header">
-			<a className="header_logo" href="/">
+			<a className="header_logo" href="/portfolio">
 				<text className="header_name">Dale.Chang</text>
 			</a>
 			<NavBar />
