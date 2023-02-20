@@ -4,6 +4,15 @@ $basic-blue: #ecf9ff;
 $font-gray: #6c6c6c;
 $font-hover: #929292;
 
+//fonts
+
+@font-face {
+	// This is parsed as a normal function call that takes a quoted string.
+	src: url("../assets/fonts/ChenYuluoyan-Thin-Monospaced.ttf") format("ttf");
+	font-family: "ChenYuluoyan";
+	font-weight: 400;
+}
+
 // RWD breakpoint setting
 @mixin md {
 	@media (max-width: 900px) {
