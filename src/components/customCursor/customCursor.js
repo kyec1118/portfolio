@@ -1,22 +1,39 @@
 import "./customCursor.scss";
-import pencil from "../../assets/Pencil.png";
-import { useRef, useEffect } from "react";
+import Pencil from "../../assets/Pencil.png";
+import { useRef, useEffect, useState } from "react";
 const CustomCursor = () => {
+	const hoverElementClass = ["nav_btn"];
+	const [isHover, setIsHover] = useState(false);
 	const cursorRef = useRef(null);
 	useEffect(() => {
 		document.addEventListener("mousemove", (event) => {
 			const { clientX, clientY } = event;
-			// console.log(clientX, clientY);
 			const mouseX = clientX - cursorRef.current.clientWidth / 2;
 			const mouseY = clientY - cursorRef.current.clientHeight / 2;
-			// console.log(mouseX, mouseY);
 			cursorRef.current.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
 			cursorRef.current.style.display = `block`;
 		});
 	}, []);
+
+	useEffect(() => {
+		document.addEventListener("mouseover", (event) => {
+			if (event.target.className.includes("btn")) {
+				setIsHover(true);
+			}
+		});
+	}, []);
+
+	useEffect(() => {
+		document.addEventListener("mouseout", (event) => {
+			if (event.target.className.includes("btn")) {
+				setIsHover(false);
+			}
+		});
+	}, []);
+
 	return (
-		<div className="cursor" ref={cursorRef}>
-			<img className="pencil" src={pencil} alt="cursor" />
+		<div className={`cursor ${isHover && "hover"}`} ref={cursorRef}>
+			<img className="pencil" src={Pencil} alt="cursor" />
 		</div>
 	);
 };
