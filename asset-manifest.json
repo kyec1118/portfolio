@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c7ab1e6c.css",
-    "main.js": "/portfolio/static/js/main.26261656.js",
+    "main.css": "/portfolio/static/css/main.69fd9a18.css",
+    "main.js": "/portfolio/static/js/main.3dbf160a.js",
+    "static/media/girl_svg.gif": "/portfolio/static/media/girl_svg.f039f487a2d53178359f.gif",
     "static/media/ChenYuluoyan-Thin-Monospaced.ttf": "/portfolio/static/media/ChenYuluoyan-Thin-Monospaced.42a358722916f0254964.ttf",
-    "static/media/portrait.gif": "/portfolio/static/media/portrait.d6416dd015557e67c926.gif",
     "static/media/Email 3.png": "/portfolio/static/media/Email 3.6370e2cb01ad4b6faf0d.png",
     "static/media/Pencil.png": "/portfolio/static/media/Pencil.32930d8f67b08e350402.png",
     "static/media/dots.svg": "/portfolio/static/media/dots.2910fba7da3690d990dc88c336d8de8c.svg",
@@ -14,11 +14,11 @@
     "static/media/deskfront.svg": "/portfolio/static/media/deskfront.679fc0495efbdd15afd057a7f634eb15.svg",
     "static/media/contactBg.svg": "/portfolio/static/media/contactBg.76914bd0a271f135be69696463b2f985.svg",
     "static/media/BlueBlob.svg": "/portfolio/static/media/BlueBlob.3120003c1e67769f9d37791a630f3b9c.svg",
-    "main.c7ab1e6c.css.map": "/portfolio/static/css/main.c7ab1e6c.css.map",
-    "main.26261656.js.map": "/portfolio/static/js/main.26261656.js.map"
+    "main.69fd9a18.css.map": "/portfolio/static/css/main.69fd9a18.css.map",
+    "main.3dbf160a.js.map": "/portfolio/static/js/main.3dbf160a.js.map"
   },
   "entrypoints": [
-    "static/css/main.c7ab1e6c.css",
-    "static/js/main.26261656.js"
+    "static/css/main.69fd9a18.css",
+    "static/js/main.3dbf160a.js"
   ]
 }
