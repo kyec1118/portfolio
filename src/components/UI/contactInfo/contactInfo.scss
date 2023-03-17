@@ -1,0 +1,16 @@
+@import "../../../styles/base";
+.contact_info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1em 1em;
+	.icon {
+		height: 30px;
+		width: auto;
+		padding-right: 1em;
+	}
+	.text {
+		font-family: "Caveat";
+		font-size: 1.5em;
+	}
+}

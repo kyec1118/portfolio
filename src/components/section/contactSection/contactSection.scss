@@ -1,16 +1,18 @@
 @import "../../../styles/base";
 .contact {
-	height: 400px;
-	width: 100%;
 	font-family: "DM Serif Display";
 	color: $font-gray;
-	text-align: center;
-	&_title {
-		font-size: 1.8rem;
-		margin: 0 auto;
+
+	&_bg {
+		z-index: -1;
+		position: absolute;
+		bottom: 0;
+		width: 100vw;
 	}
-	&_info {
-		font-family: "caveat";
-		padding: 2rem;
+	&_list {
+		display: flex;
+		flex-direction: row;
+		align-items: start;
+		padding: 0 0 3em 5em;
 	}
 }
