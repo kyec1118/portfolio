@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.94004f90.css",
-    "main.js": "/portfolio/static/js/main.5fa1da00.js",
+    "main.css": "/portfolio/static/css/main.7ed6551b.css",
+    "main.js": "/portfolio/static/js/main.48694cb9.js",
     "static/media/girl_svg.gif": "/portfolio/static/media/girl_svg.f039f487a2d53178359f.gif",
     "static/media/ChenYuluoyan-Thin-Monospaced.ttf": "/portfolio/static/media/ChenYuluoyan-Thin-Monospaced.42a358722916f0254964.ttf",
     "static/media/MeetLangLang.png": "/portfolio/static/media/MeetLangLang.fe0734412316c04304f8.png",
@@ -18,11 +18,11 @@
     "static/media/deskfront.svg": "/portfolio/static/media/deskfront.679fc0495efbdd15afd057a7f634eb15.svg",
     "static/media/contactBg.svg": "/portfolio/static/media/contactBg.76914bd0a271f135be69696463b2f985.svg",
     "static/media/BlueBlob.svg": "/portfolio/static/media/BlueBlob.3120003c1e67769f9d37791a630f3b9c.svg",
-    "main.94004f90.css.map": "/portfolio/static/css/main.94004f90.css.map",
-    "main.5fa1da00.js.map": "/portfolio/static/js/main.5fa1da00.js.map"
+    "main.7ed6551b.css.map": "/portfolio/static/css/main.7ed6551b.css.map",
+    "main.48694cb9.js.map": "/portfolio/static/js/main.48694cb9.js.map"
   },
   "entrypoints": [
-    "static/css/main.94004f90.css",
-    "static/js/main.5fa1da00.js"
+    "static/css/main.7ed6551b.css",
+    "static/js/main.48694cb9.js"
   ]
 }
