@@ -3,6 +3,7 @@ import { useState } from "react";
 import NavButton from "../UI/navButton/navButton";
 const NavBar = () => {
 	const [showNavBar, setShowNavBar] = useState(false);
+
 	const handleShowNavBar = () => {
 		setShowNavBar(!showNavBar);
 		console.log(showNavBar);
@@ -14,11 +15,11 @@ const NavBar = () => {
 				className={`menu_icon ${showNavBar && "close"}`}
 				onClick={handleShowNavBar}
 			>
-				<div class="btn-line"></div>
-				<div class="btn-line"></div>
-				<div class="btn-line"></div>
+				<div className="btn-line"></div>
+				<div className="btn-line"></div>
+				<div className="btn-line"></div>
 			</div>
-			<div className={`nav_btns ${showNavBar && "active"}`}>
+			<div className={`nav_btns ${showNavBar && "active"} `}>
 				<NavButton btnName="About" />
 				<NavButton btnName="Experience" />
 				<NavButton btnName="Projects" />
