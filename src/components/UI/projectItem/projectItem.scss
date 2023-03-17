@@ -1,0 +1,46 @@
+.project_item {
+	padding: 5vw 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&.reverse {
+		flex-direction: row-reverse;
+	}
+
+	.project_image {
+		border-radius: 50%;
+
+		img {
+			clip-path: inset(100% 0% 0% 0%);
+			transition: clip-path 1s cubic-bezier(0.77, 0, 0.175, 1);
+			border-radius: 5%;
+			width: 100%;
+
+			&.is-inview {
+				clip-path: inset(0% 0% 0% 0%);
+			}
+		}
+	}
+
+	.project_title {
+		position: relative;
+		left: -1.5vw;
+		padding-bottom: 1vw;
+		font-size: 2.5vw;
+		font-family: "ChenYuluoyan";
+	}
+
+	.project_text {
+		font-size: 1.3vw;
+		font-family: "Serif";
+	}
+
+	.project_textbox {
+		width: 25%;
+		padding: 0 10vw;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}

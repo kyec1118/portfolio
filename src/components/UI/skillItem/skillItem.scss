@@ -1,0 +1,31 @@
+@import "../../../styles/base";
+@import "../../../styles/animation.scss";
+
+.skill_item {
+	padding: 4vw 0 6vw;
+	color: $font-gray;
+	text-align: left;
+	display: flex;
+	flex: 30%;
+	justify-content: center;
+
+	.skill_title {
+		position: relative;
+		font-family: "ChenYuluoyan";
+		font-size: 2.5vw;
+		padding-right: 1vw;
+	}
+
+	.skill_list {
+		list-style: none;
+		font-family: "Serif";
+		text-align: left;
+		position: relative;
+		top: 30px;
+
+		> li {
+			font-size: 1.2vw;
+			padding: 5px 0;
+		}
+	}
+}
