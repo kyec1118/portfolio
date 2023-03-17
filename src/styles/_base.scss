@@ -8,7 +8,8 @@ $font-hover: #929292;
 
 @font-face {
 	// This is parsed as a normal function call that takes a quoted string.
-	src: url("../assets/fonts/ChenYuluoyan-Thin-Monospaced.ttf") format("ttf");
+	src: url("../assets/fonts/ChenYuluoyan-Thin-Monospaced.ttf")
+		format("truetype");
 	font-family: "ChenYuluoyan";
 	font-weight: 400;
 }
