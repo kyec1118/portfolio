@@ -1,10 +1,12 @@
 import "./customCursor.scss";
 import Pencil from "../../assets/Pencil.png";
 import { useRef, useEffect, useState } from "react";
+
 const CustomCursor = () => {
-	const hoverElementClass = ["nav_btn"];
+	// const hoverElementClass = ["nav_btn"];
 	const [isHover, setIsHover] = useState(false);
 	const cursorRef = useRef(null);
+
 	useEffect(() => {
 		document.addEventListener("mousemove", (event) => {
 			const { clientX, clientY } = event;
@@ -17,7 +19,8 @@ const CustomCursor = () => {
 
 	useEffect(() => {
 		document.addEventListener("mouseover", (event) => {
-			if (event.target.className.includes("btn")) {
+			const element = String(event.target.className);
+			if (element.includes("btn")) {
 				setIsHover(true);
 			}
 		});
@@ -25,7 +28,8 @@ const CustomCursor = () => {
 
 	useEffect(() => {
 		document.addEventListener("mouseout", (event) => {
-			if (event.target.className.includes("btn")) {
+			const element = String(event.target.className);
+			if (element.includes("btn")) {
 				setIsHover(false);
 			}
 		});
