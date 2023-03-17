@@ -1,0 +1,27 @@
+@import "../../../styles/base";
+.project {
+	height: auto;
+	width: 100%;
+	font-family: "Caveat";
+	font-size: 4rem;
+	color: $font-gray;
+	padding-bottom: 10vw;
+
+	&_dots {
+		height: 150px;
+		position: absolute;
+		right: 50px;
+		z-index: -3;
+	}
+	&_section_title {
+		position: absolute;
+		padding: 20px, 0;
+		right: 100px;
+		z-index: -3;
+	}
+
+	.project_items {
+		padding: 10vw 0;
+		// margin: auto;
+	}
+}
