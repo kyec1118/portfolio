@@ -31,12 +31,28 @@ const SkillSection = () => {
 					title="程式實作"
 					list={[
 						"Web Development",
-						"Python Data Analysis",
 						"Git Version Control",
+						"Python Data Analysis",
 						"GCP AWS 雲端應用",
 					]}
 				/>
 
+				<SkillItem
+					title="語言能力"
+					list={[
+						"托福 TOEFL 109",
+						"多益 TOEIC 940",
+						"以交換計畫赴歐洲生活半年",
+					]}
+				/>
+				<SkillItem
+					title="軟硬體測試"
+					list={[
+						"自動化測試",
+						"Unit / Integration / E2E Testing",
+						"網站 / 手機應用 / 硬體機台",
+					]}
+				/>
 				<SkillItem
 					title="影像編輯"
 					list={[
@@ -46,8 +62,6 @@ const SkillSection = () => {
 						"Adobe XD",
 					]}
 				/>
-				<SkillItem title="語言能力" list={["托福 TOEFL 109", "多益 940"]} />
-				<SkillItem title="專案管理" list={["過往工作經驗包含多項專案"]} />
 			</div>
 		</section>
 	);
