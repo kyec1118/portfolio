@@ -2,17 +2,53 @@
 .contact {
 	font-family: "DM Serif Display";
 	color: $font-gray;
+	height: 400px;
+	background-color: #fbf4f4;
+	position: relative;
+
+	&_title_wrapper {
+		border-radius: 50%;
+		height: 400px;
+		width: 400px;
+		transform: translate(50%, 50%);
+		position: absolute;
+		left: 8%;
+		top: -150px;
+	}
+
+	&_svg {
+		height: 80px;
+		top: 10px;
+	}
+
+	&_context {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
 	&_bg {
 		z-index: -1;
-		position: absolute;
-		bottom: 0;
+		position: fixed;
+		bottom: 380px;
 		width: 100vw;
+		height: auto;
 	}
 	&_list {
+		width: 30%;
 		display: flex;
-		flex-direction: row;
-		align-items: start;
-		padding: 0 0 3em 5em;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+	}
+
+	.resume_download {
+		font-family: "ChenYuLuoyan";
+		font-size: 3rem;
+		transition: color 0.5s ease;
+
+		&:hover {
+			color: #b5b5b5;
+		}
 	}
 }
