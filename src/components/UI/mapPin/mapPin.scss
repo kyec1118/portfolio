@@ -1,0 +1,66 @@
+.map_pin {
+	display: flex;
+	width: 300px;
+	.year {
+		font-family: "Caveat";
+		font-size: 2.2vw;
+		padding: 1vw;
+	}
+
+	.event {
+		font-family: "Serif";
+		font-size: 1.2vw;
+	}
+}
+
+.ncu_grad {
+	flex-direction: column-reverse;
+	position: absolute;
+	top: -4vw;
+	left: 15vw;
+}
+
+.acer {
+	flex-direction: column;
+	position: absolute;
+	left: 35vw;
+	top: 1vw;
+	& > .year {
+		padding: 0;
+	}
+}
+
+.ntu {
+	flex-direction: column;
+	position: absolute;
+	left: 20vw;
+	top: 8vw;
+}
+
+.tomofun {
+	position: absolute;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	top: 14vw;
+	left: -5vw;
+	width: 300px;
+	& > .year {
+		padding-bottom: 3px;
+		padding-left: 0;
+	}
+}
+
+.europe {
+	position: absolute;
+	left: 18vw;
+	top: 21vw;
+	flex-direction: column;
+}
+
+.ntu_grad {
+	flex-direction: column;
+	position: absolute;
+	left: 37vw;
+	top: 21vw;
+}
