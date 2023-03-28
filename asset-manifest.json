@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a55cc73c.css",
-    "main.js": "/portfolio/static/js/main.2a6b4cf0.js",
+    "main.css": "/portfolio/static/css/main.79b93be9.css",
+    "main.js": "/portfolio/static/js/main.bc3644ef.js",
     "static/media/girl_svg.gif": "/portfolio/static/media/girl_svg.f039f487a2d53178359f.gif",
     "static/media/ChenYuluoyan-Thin-Monospaced.ttf": "/portfolio/static/media/ChenYuluoyan-Thin-Monospaced.42a358722916f0254964.ttf",
     "static/media/MeetLangLang.png": "/portfolio/static/media/MeetLangLang.fe0734412316c04304f8.png",
@@ -26,11 +26,11 @@
     "static/media/deskbg.svg": "/portfolio/static/media/deskbg.7d66b4e49d3650355d69aeb54c6d0666.svg",
     "static/media/deskfront.svg": "/portfolio/static/media/deskfront.679fc0495efbdd15afd057a7f634eb15.svg",
     "static/media/BlueBlob.svg": "/portfolio/static/media/BlueBlob.3120003c1e67769f9d37791a630f3b9c.svg",
-    "main.a55cc73c.css.map": "/portfolio/static/css/main.a55cc73c.css.map",
-    "main.2a6b4cf0.js.map": "/portfolio/static/js/main.2a6b4cf0.js.map"
+    "main.79b93be9.css.map": "/portfolio/static/css/main.79b93be9.css.map",
+    "main.bc3644ef.js.map": "/portfolio/static/js/main.bc3644ef.js.map"
   },
   "entrypoints": [
-    "static/css/main.a55cc73c.css",
-    "static/js/main.2a6b4cf0.js"
+    "static/css/main.79b93be9.css",
+    "static/js/main.bc3644ef.js"
   ]
 }
