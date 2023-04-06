@@ -8,20 +8,21 @@ $font-hover: #929292;
 
 @font-face {
 	// This is parsed as a normal function call that takes a quoted string.
-	src: url("../assets/fonts/ChenYuluoyan-Thin-Monospaced.ttf")
-		format("truetype");
+	src: local("ChenYuluoyan"),
+		url("../assets/fonts/chenyuluoyan-thin-monospaced-webfont.woff")
+			format("woff");
 	font-family: "ChenYuluoyan";
 	font-weight: 400;
 }
 
 // RWD breakpoint setting
 @mixin md {
-	@media (max-width: 900px) {
+	@media only screen and (max-width: 1200px) {
 		@content;
 	}
 }
 @mixin sm {
-	@media (max-width: 600px) {
+	@media only screen and (max-width: 600px) {
 		@content;
 	}
 }

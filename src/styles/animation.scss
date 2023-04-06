@@ -80,6 +80,22 @@
 	}
 }
 
+@keyframes clickup {
+	0% {
+		/*Here we start*/
+		transform: translate(0);
+	}
+
+	50% {
+		transform: translate(-7px, -7px);
+	}
+
+	100% {
+		/*Here we finished*/
+		transform: translate(0);
+	}
+}
+
 @keyframes jumpInTopLeft {
 	0% {
 		/*Here we start*/
