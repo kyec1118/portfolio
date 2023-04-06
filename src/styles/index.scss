@@ -1,9 +1,100 @@
 @import "./app.scss";
 @import "./base";
-// @import "./header/index.scss";
 
 * {
 	cursor: none;
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10 and IE 11 */
+	user-select: none; /* Standard syntax */
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 body {
@@ -14,6 +105,11 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background: $page-background;
+
+	&.stop-scrolling {
+		height: 100%;
+		overflow: hidden;
+	}
 }
 
 code {
@@ -23,16 +119,13 @@ code {
 
 button {
 	all: unset;
-	cursor: pointer;
 }
 
 a {
 	all: unset;
 }
-html {
-	scroll-behavior: smooth;
-}
-//locomotive-scroll
+
+// locomotive-scroll css
 html.has-scroll-smooth {
 	overflow: hidden;
 }
@@ -113,4 +206,20 @@ html.has-scroll-dragging {
 [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
 	right: auto;
 	bottom: 0;
+}
+
+@include md {
+	html,
+	body {
+		width: 100%;
+		overflow-x: hidden;
+	}
+}
+
+@include sm {
+	html,
+	body {
+		width: 100%;
+		overflow-x: hidden;
+	}
 }

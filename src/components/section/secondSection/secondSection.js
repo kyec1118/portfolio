@@ -2,7 +2,7 @@ import "./secondSection.scss";
 import { ReactComponent as Desk } from "../../../assets/desk.svg";
 import { ReactComponent as Dots } from "../../../assets/dotsWhite.svg";
 import Map from "../../../components/map/map.js";
-import profile from "../../../assets/images/profile.jpg";
+import profile from "../../../assets/images/profile_rome.jpg";
 
 const SecondSection = () => {
 	return (
@@ -14,12 +14,12 @@ const SecondSection = () => {
 					className="about_title_text"
 					data-scroll
 					data-scroll-direction="horizontal"
-					data-scroll-speed="-2"
+					data-scroll-speed="-1"
 				>
 					About Me.
 				</h1>
 			</div>
-			<div className="about_content">
+			<div className="about_content" data-scroll>
 				<div className="about_education">
 					<img
 						src={profile}
@@ -27,7 +27,7 @@ const SecondSection = () => {
 						alt="profile"
 						data-scroll
 						data-scroll-direction="horizontal"
-						data-scroll-speed="-3"
+						data-scroll-speed="-2"
 					/>
 					<div className="about_education_textbox">
 						<h2
@@ -41,12 +41,18 @@ const SecondSection = () => {
 							<p className="about_education_master" data-scroll>
 								台灣大學資訊管理研究所
 							</p>
-							<p className="about_education_bachelor">中央大學資訊管理系</p>
+							<p className="about_education_bachelor" data-scroll>
+								中央大學資訊管理系
+							</p>
 						</ul>
 					</div>
 				</div>
 				<div className="about_journey">
-					<span className="about_journey_wrap" data-scroll>
+					<span
+						className="about_journey_wrap"
+						id="about_journey_wrap"
+						data-scroll
+					>
 						<span data-scroll data-scroll-delay="0.40" data-scroll-speed="2">
 							經
 						</span>

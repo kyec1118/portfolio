@@ -6,7 +6,6 @@ const NavBar = () => {
 
 	const handleShowNavBar = () => {
 		setShowNavBar(!showNavBar);
-		console.log(showNavBar);
 	};
 
 	return (

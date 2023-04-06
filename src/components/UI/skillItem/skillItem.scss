@@ -18,7 +18,7 @@
 
 	.skill_list {
 		list-style: none;
-		font-family: "Serif";
+		font-family: "Noto Serif TC", serif;
 		text-align: left;
 		position: relative;
 		top: 30px;
@@ -27,5 +27,43 @@
 			font-size: 1.2vw;
 			padding: 5px 0;
 		}
+	}
+}
+
+@include sm {
+	.skill_item {
+		padding: 30px 0;
+		margin-left: 15%;
+		text-align: center;
+		display: flex;
+		width: 100%;
+		justify-content: flex-start;
+		// opacity: 0;
+		// transform: translateX(80px);
+
+		.skill_title {
+			position: relative;
+			writing-mode: vertical-lr;
+			font-size: 2rem;
+			padding-right: 30px;
+		}
+
+		.skill_list {
+			list-style: none;
+			font-family: "Noto Serif TC", serif;
+			text-align: left;
+			position: relative;
+			top: 30px;
+
+			> li {
+				font-size: 1rem;
+				padding: 0px 0 8px;
+			}
+		}
+		// &.is-inview {
+		// 	opacity: 1;
+		// 	transform: translateX(0px);
+		// 	transition: all 0.8s ease-in;
+		// }
 	}
 }

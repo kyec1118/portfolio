@@ -18,6 +18,9 @@
 		position: absolute;
 		left: 0;
 	}
+	.path_mobile {
+		display: none;
+	}
 
 	&_info {
 		display: none;
@@ -45,6 +48,22 @@
 			.map_pin:last-child {
 				@include moveInDelay("1800ms", "fadeIn", "500ms");
 			}
+		}
+	}
+}
+
+@include sm {
+	.map {
+		.path {
+			display: none;
+		}
+
+		.path_mobile {
+			display: block;
+			height: 600px;
+			margin-left: 50px;
+			margin-top: 20px;
+			margin-bottom: 50px;
 		}
 	}
 }

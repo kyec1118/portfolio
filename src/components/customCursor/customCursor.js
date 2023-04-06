@@ -1,9 +1,9 @@
 import "./customCursor.scss";
 import Pencil from "../../assets/Pencil.png";
+import Pencilt from "../../assets/Pencilt.png";
 import { useRef, useEffect, useState } from "react";
 
 const CustomCursor = () => {
-	// const hoverElementClass = ["nav_btn"];
 	const [isHover, setIsHover] = useState(false);
 	const cursorRef = useRef(null);
 
@@ -19,8 +19,8 @@ const CustomCursor = () => {
 
 	useEffect(() => {
 		document.addEventListener("mouseover", (event) => {
-			const element = String(event.target.className);
-			if (element.includes("btn")) {
+			const isClickable = event.target.onclick || event.target.href;
+			if (isClickable) {
 				setIsHover(true);
 			}
 		});
@@ -28,8 +28,8 @@ const CustomCursor = () => {
 
 	useEffect(() => {
 		document.addEventListener("mouseout", (event) => {
-			const element = String(event.target.className);
-			if (element.includes("btn")) {
+			const isClickable = event.target.onclick || event.target.href;
+			if (isClickable) {
 				setIsHover(false);
 			}
 		});
@@ -37,7 +37,12 @@ const CustomCursor = () => {
 
 	return (
 		<div className={`cursor ${isHover && "hover"}`} ref={cursorRef}>
-			<img className="pencil" src={Pencil} alt="cursor" />
+			<img
+				className="pencil"
+				src={Pencil}
+				// src={`${isHover ? Pencil : Pencilt}`}
+				alt="cursor"
+			/>
 		</div>
 	);
 };

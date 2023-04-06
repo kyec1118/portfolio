@@ -3,16 +3,27 @@ import { ReactComponent as BlueBlob } from "../../../assets/BlueBlob.svg";
 import { ReactComponent as DeskBg } from "../../../assets/deskbg.svg";
 import { ReactComponent as DeskFt } from "../../../assets/deskfront.svg";
 import { ReactComponent as Dots } from "../../../assets/dots.svg";
-import portrait from "../../../assets/girl_svg.gif";
+import portrait from "../../../assets/girl_svg1.gif";
+import cafe from "../../../assets/cafe.png";
 
 const WelcomeSection = () => {
 	return (
 		<section className="welcome" data-scroll-section>
 			<BlueBlob className="blueblob" />
 			<DeskBg className="deskbg" />
-			<DeskFt className="deskft" />
+			<DeskFt className="deskft" />{" "}
+			<img
+				src={cafe}
+				alt="cafe"
+				className="cafe"
+				data-scroll
+				data-scroll-direction="horizontal"
+				data-scroll-speed="-5"
+				data-scroll-position="top"
+			/>
 			<div className="welcome_text_section">
 				<Dots className="dots" />
+
 				<h1
 					className="welcome_text_hello"
 					data-scroll
@@ -29,9 +40,13 @@ const WelcomeSection = () => {
 					data-scroll-speed="2"
 					data-scroll-position="top"
 				>
-					嗨！我是古宜，歡迎來到我的網頁 :)
+					嗨！我是古宜，
+					<br className="welcome_text_br" />
+					歡迎來到我的網頁 :)
 					<br />
-					我的過去經驗包含前後端開發、軟硬體測試、專案管理，也喜歡學習新技術 :)
+					我的過去經驗包含前後端開發、軟硬體測試、
+					<br />
+					介面設計、專案管理，也喜歡學習新技術 :)
 					<br />
 					若能透過這個頁面更認識我就太好了！
 				</p>

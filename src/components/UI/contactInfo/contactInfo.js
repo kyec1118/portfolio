@@ -1,7 +1,7 @@
 import "./contactInfo.scss";
 const ContactInfo = (props) => {
 	return (
-		<div className="contact_info">
+		<div className="contact_info target">
 			<props.img className="contact_info_icon" />
 			<a
 				href={props.link}

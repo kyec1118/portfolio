@@ -1,12 +1,5 @@
 @use "../../styles/base";
 .homepage {
-	.main-container {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-
-	section {
-		height: min(80vh, 700px);
-	}
+	display: flex;
+	flex-direction: column;
 }
