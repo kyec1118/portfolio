@@ -6,7 +6,7 @@ Welcome to my portfolio, still updating tits and bits everywhere 👩🏻‍💻
 
 [See commit history 👀](https://github.com/kyec1118/portfolio/commits/main)
 
-[Go to website 🔗](http://localhost:3000)
+[Go to website 🔗](https://kyec1118.github.io/portfolio/)
 
 #### Folder structure
 

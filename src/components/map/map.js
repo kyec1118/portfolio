@@ -44,22 +44,26 @@ const Map = () => {
 			<div className="map_info" id="map_info">
 				<MapPin
 					year={2018}
-					event={["🎓 中央大學 \n 資管系 畢業"]}
+					event={['中央大學資管系 \n 畢業']}
 					class="ncu_grad"
 				/>
+				<MapPin year={2019} event={['Acer 宏碁 \n QA 工程師']} class="acer" />
+				<MapPin year={2020} event="台大資管所 入學" class="ntu" />
 				<MapPin
-					year={2019}
-					event={["👩🏻‍💻 Acer 宏碁 \n 培訓工程師"]}
-					class="acer"
-				/>
-				<MapPin year={2020} event="🌸 台大資管所 入學" class="ntu" />
-				<MapPin
-					year={"2020-2022"}
-					event={["🐕‍🦺 Tomofun \n QA / 前端實習"]}
+					year={'2020 - 2022'}
+					event={['Tomofun \n QA / 前端實習生']}
 					class="tomofun"
 				/>
-				<MapPin year={"2022-2023"} event="🇱🇹 赴歐洲交換" class="europe" />
-				<MapPin year={2023} event="🎓 台大資管所 畢業" class="ntu_grad" />
+				<MapPin
+					year={'2022 - 2023'}
+					event={['赴歐洲交換 \n 台大資管所 畢業']}
+					class="europe"
+				/>
+				<MapPin
+					year={'2023 - 現職'}
+					event={['趨勢科技 \n CRM系統工程師']}
+					class="tm"
+				/>
 			</div>
 			<Path className="path" />
 			<PathMobile className="path_mobile" />

@@ -167,6 +167,9 @@
 }
 
 @include sm {
+	.blueblob {
+		animation: moveInTop 800ms;
+	}
 	.deskbg {
 		bottom: 0px;
 		z-index: -2;
