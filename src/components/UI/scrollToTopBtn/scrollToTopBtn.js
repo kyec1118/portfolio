@@ -4,7 +4,7 @@ const ScrollToTopBtn = (props) => {
 	return (
 		<a
 			className={`scroll_top_btn ${props.isScrolled && "scrolled"}`}
-			href="https://drive.google.com/file/d/1EFOSIL7Se26slovhEeqezFwvn1c8LaQN/view?usp=share_link"
+			href="https://drive.google.com/file/d/1U9TNXbwmp0KMhremvBqt4JJNzCMO32G9/view?usp=sharing"
 			target="_blank"
 			rel="noopener noreferrer"
 		>

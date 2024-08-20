@@ -38,8 +38,8 @@ const ContactSection = () => {
 					{" "}
 					<ContactInfo
 						img={Email}
-						info="dalec1118@gmail.com"
-						link="mailto: dalec1118@gmail.com"
+						info="changkuyee@gmail.com"
+						link="mailto: changkuyee@gmail.com"
 					/>
 					<ContactInfo
 						img={FacebookIcon}
@@ -54,7 +54,7 @@ const ContactSection = () => {
 				</div>
 				<div className="resume_download target">
 					<a
-						href="https://drive.google.com/file/d/1EFOSIL7Se26slovhEeqezFwvn1c8LaQN/view?usp=share_link"
+						href="https://drive.google.com/file/d/1U9TNXbwmp0KMhremvBqt4JJNzCMO32G9/view?usp=sharing"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="resume_title"
